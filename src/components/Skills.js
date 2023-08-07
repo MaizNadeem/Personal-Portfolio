@@ -48,7 +48,6 @@ const Skills = () => {
                                 arrows={true}
                                 responsive={responsive}
                                 infinite={false}
-                                showDots={true}
                                 className="gd-carousel">
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >
                                     <ProgressBar percentage={95} />

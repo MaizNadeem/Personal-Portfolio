@@ -8,6 +8,8 @@ import Col from "react-bootstrap/Col";
 
 import headerImg from "../assets/img/header-img.svg";
 
+import 'animate.css';
+
 const Banner = () => {
     
     const [loopNum, setLoopNum] = useState(0)
