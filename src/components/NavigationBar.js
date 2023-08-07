@@ -46,26 +46,26 @@ const NavigationBar = () => {
             <Nav className="me-auto">
                 <Nav.Link 
                     href="#home"
-                    className={activeLink == 'home' ? 'active-navbar-link' : 'navbar-link'}
+                    className={activeLink === 'home' ? 'active-navbar-link' : 'navbar-link'}
                     onClick={() => onUpdateActiveLink('home')}
                 >Home</Nav.Link>
                 <Nav.Link
                     href="#skills"
-                    className={activeLink == 'skills' ? 'active-navbar-link' : 'navbar-link'}
+                    className={activeLink === 'skills' ? 'active-navbar-link' : 'navbar-link'}
                     onClick={() => onUpdateActiveLink('skills')}
                 >Skills</Nav.Link>
                 <Nav.Link 
                     href="#projects"
-                    className={activeLink == 'projects' ? 'active-navbar-link' : 'navbar-link'}
+                    className={activeLink === 'projects' ? 'active-navbar-link' : 'navbar-link'}
                     onClick={() => onUpdateActiveLink('projects')}
                 >Projects</Nav.Link>
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='#'><img src={navIcon1} alt='Social' /></a>
-                    <a href='#'><img src={navIcon2} alt='Social' /></a>
-                    <a href='#'><img src={navIcon3} alt='Social' /></a>
-                    <a href='#'><img src={navIcon4} alt='Social' /></a>
+                    <a href='#social1'><img src={navIcon1} alt='Social' /></a>
+                    <a href='#social2'><img src={navIcon2} alt='Social' /></a>
+                    <a href='#social3'><img src={navIcon3} alt='Social' /></a>
+                    <a href='#social4'><img src={navIcon4} alt='Social' /></a>
                 </div>
                 <Button 
                     className='vvd'
@@ -76,6 +76,7 @@ const NavigationBar = () => {
         </Container>
         </Navbar>
     )
+
 }
 
 export default NavigationBar
