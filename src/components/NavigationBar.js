@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -34,6 +35,7 @@ const NavigationBar = () => {
     }
 
     return (
+        <Router>
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
             <Navbar.Brand href="#home">
@@ -46,17 +48,17 @@ const NavigationBar = () => {
             <Nav className="me-auto">
                 <Nav.Link 
                     href="#home"
-                    className={activeLink === 'home' ? 'active-navbar-link' : 'navbar-link'}
+                    className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
                     onClick={() => onUpdateActiveLink('home')}
                 >Home</Nav.Link>
                 <Nav.Link
                     href="#skills"
-                    className={activeLink === 'skills' ? 'active-navbar-link' : 'navbar-link'}
+                    className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
                     onClick={() => onUpdateActiveLink('skills')}
                 >Skills</Nav.Link>
                 <Nav.Link 
                     href="#projects"
-                    className={activeLink === 'projects' ? 'active-navbar-link' : 'navbar-link'}
+                    className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
                     onClick={() => onUpdateActiveLink('projects')}
                 >Projects</Nav.Link>
             </Nav>
@@ -67,14 +69,14 @@ const NavigationBar = () => {
                     <a href='#social3'><img src={navIcon3} alt='Social' /></a>
                     <a href='#social4'><img src={navIcon4} alt='Social' /></a>
                 </div>
-                <Button 
-                    className='vvd'
-                    onClick={() => console.log('connect')}    
-                ><span>Let's Connect</span></Button>
+                <HashLink to='#connect'>
+                    <button className="vvd"><span>Let’s Connect</span></button>
+                </HashLink>
             </span>
             </Navbar.Collapse>
         </Container>
         </Navbar>
+        </Router>
     )
 
 }
