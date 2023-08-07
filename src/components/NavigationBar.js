@@ -70,7 +70,7 @@ const NavigationBar = () => {
                     <a href='#social4'><img src={navIcon4} alt='Social' /></a>
                 </div>
                 <HashLink to='#connect'>
-                    <button className="vvd"><span>Let’s Connect</span></button>
+                    <button className="vvd"><span>Let's Connect</span></button>
                 </HashLink>
             </span>
             </Navbar.Collapse>

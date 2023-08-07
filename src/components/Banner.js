@@ -17,15 +17,6 @@ const Banner = () => {
     const toRotate = [ "Web Developer", "Mobile App Developer", "Video/VFX Editor" ]
     const period = 500
 
-    useEffect(() => {
-
-        let ticker = setInterval(() => {
-            tick()
-        }, delta)
-        return () => { clearInterval(ticker) };
-    
-    }, [text])
-
     const tick = () => {
         let i = loopNum % toRotate.length
         let fullText = toRotate[i]
@@ -51,6 +42,15 @@ const Banner = () => {
         }
     }
 
+    useEffect(() => {
+
+        let ticker = setInterval(() => {
+            tick()
+        }, delta)
+        return () => { clearInterval(ticker) };
+    // eslint-disable-next-line
+    }, [text])
+
     return (
         <section className="banner" id="home">
         <Container>
@@ -70,7 +70,7 @@ const Banner = () => {
                 <TrackVisibility>
                 {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                    <img src={headerImg} alt="Header Img"/>
+                        <img src={headerImg} alt="Header Img"/>
                     </div>}
                 </TrackVisibility>
             </Col>
