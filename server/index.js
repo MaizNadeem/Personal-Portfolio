@@ -13,9 +13,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/", router);
 
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
-
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
