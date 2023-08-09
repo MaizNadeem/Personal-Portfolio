@@ -6,12 +6,6 @@ export const Newsletter = () => {
     const [status, setStatus] = useState(null);
     const [message, setMessage] = useState("");
 
-    const clearFields = () => {
-        setEmail("");
-        setStatus(null);
-        setMessage("");
-    };
-
     const sendResumeRequest = async (email) => {
         try {
         const response = await fetch("http://localhost:5000/send-resume", {
@@ -27,7 +21,6 @@ export const Newsletter = () => {
         if (response.ok) {
             setStatus("success");
             setMessage("Resume sent successfully!");
-            clearFields()
         } else {
             setStatus("error");
             setMessage("Resume sending failed. Please try again later.");
