@@ -1,22 +1,29 @@
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { Newsletter } from "./Newsletter";
 
+import { 
+    REACT_APP_MAILCHIMP_API_KEY,
+    REACT_APP_MAILCHIMP_ID,
+    REACT_APP_MAILCHIMP_URL,
+    REACT_APP_MAILCHIMP_U
+} from "../config";
+
 const MailchimpForm = () => {
     
-    const postUrl = `${process.env.REACT_APP_MAILCHIMP_URL}?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
+    const postUrl = `${REACT_APP_MAILCHIMP_URL}?u=${REACT_APP_MAILCHIMP_U}&id=${REACT_APP_MAILCHIMP_ID}`;
 
     return (
         <>
         <MailchimpSubscribe
-                url={postUrl}
-                render={({ subscribe, status, message }) => (
-                    <Newsletter
-                        status={status}
-                        message={message}
-                        onValidated={formData => subscribe(formData)}
-                    />
-                )}
-            />
+            url={postUrl}
+            render={({ subscribe, status, message }) => (
+                <Newsletter
+                    status={status}
+                    message={message}
+                    onValidated={formData => subscribe(formData)}
+                />
+            )}
+        />
         </>
     )
 }

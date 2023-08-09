@@ -5,8 +5,13 @@ export const Newsletter = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
 
+    const clearFields = () => {
+        setEmail('');
+    }
+
     useEffect(() => {
-        if (status === 'success') clearFields();
+        if (status === 'success')
+            clearFields();
     }, [status])
 
     const handleSubmit = (e) => {
@@ -18,11 +23,6 @@ export const Newsletter = ({ status, message, onValidated }) => {
             });
         }
     };
-    
-
-    const clearFields = () => {
-        setEmail('');
-    }
 
     return (
         <Col lg={12}>
