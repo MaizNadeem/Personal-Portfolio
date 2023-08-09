@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 
 import 'react-circular-progressbar/dist/styles.css';
 
-const ProgressBar = ({ percentage }) => {
+const ProgressBar = ({ percentage, image, color }) => {
     
     const [isVisible, setIsVisible] = useState(false);
     const [currentPercentage, setCurrentPercentage] = useState(0);
@@ -45,17 +45,23 @@ const ProgressBar = ({ percentage }) => {
             }}
             ref={ref}
         >
-            <CircularProgressbar
+            <CircularProgressbarWithChildren
                 value={currentPercentage}
-                text={`${Math.round(currentPercentage)}%`}
                 styles={buildStyles({
-                    pathColor: '#9F3483',
+                    pathColor: color,
                     trailColor: 'transparent',
                     textColor: 'white',
                     textSize: '18px',
                     rotation: 0.25,
                 })}
-            />
+            >
+                <div style={{ width: 50, marginTop: 15 }}>
+                    <img  style={{ borderRadius: 10 }} src={image} alt="doge" />
+                </div>
+                <div style={{ fontSize: 12, marginTop: 5 }}>
+                    <strong>{Math.round(currentPercentage)}%</strong>
+                </div>
+            </CircularProgressbarWithChildren>
         </div>
     );
 };

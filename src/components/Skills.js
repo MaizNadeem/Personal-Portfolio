@@ -1,6 +1,8 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import web from '../assets/skills/web.png'
+import net from '../assets/skills/net.png'
+import reactNative from '../assets/skills/react-native.png'
+import photoshop from '../assets/skills/photoshop.png'
+import premierePro from '../assets/skills/premiere-pro.png'
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
@@ -50,24 +52,24 @@ const Skills = () => {
                                 infinite={false}
                                 className="gd-carousel">
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >
-                                    <ProgressBar percentage={95} />
+                                    <ProgressBar percentage={95} image={web} color='##3583DD' />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >
-                                    <ProgressBar percentage={90} />
+                                    <ProgressBar percentage={90} image={reactNative} color='#D9F0F7' />
                                     <h5>React Native</h5>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >
-                                    <ProgressBar percentage={90} />
+                                    <ProgressBar percentage={90} image={net} color='#512BD4' />
                                     <h5>.NET Framework</h5>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >
-                                    <ProgressBar percentage={85} />
+                                    <ProgressBar percentage={85} image={photoshop} color='#001834' />
                                     <h5>Adobe Photoshop</h5>
                                 </div>
                                 <div className="item">
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >
-                                    <ProgressBar percentage={90} />
+                                    <ProgressBar percentage={90} image={premierePro} color='#00004A' />
                                     <h5>Adobe Premiere Pro</h5>
                                     </div>
                                 </div>
