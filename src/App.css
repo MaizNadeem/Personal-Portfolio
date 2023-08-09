@@ -94,11 +94,13 @@ input:focus, textarea:focus, select:focus {
     }
 }
 p.success {
-    color: green;
+    color: lightgreen;
+    margin-top: 10px;
 }
 
 p.danger {
     color: red;
+    margin-top: 10px;
 }
 /************ Navbar Css ************/
 nav.navbar {
@@ -251,7 +253,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
 
-/************ Banner Css ************/
+/************ Banner CSS ************/
 .banner {
     margin-top: 0;
     padding: 260px 0 100px 0;
@@ -331,7 +333,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 
-/************ Skills Css ************/
+/************ Skills CSS ************/
 .skill {
     padding: 0 0 50px 0;
     position: relative;
@@ -376,7 +378,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: unset !important;
 }
 
-/************ Projects Css ************/
+/************ Projects CSS ************/
 .project {
     padding: 80px 0;
     position: relative;
@@ -451,7 +453,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
     position: relative;
-    border-radius: 30px;
+    border-radius: 15px;
     overflow: hidden;
     margin-bottom: 24px;
 }
@@ -502,7 +504,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact CSS ************/
 .contact {
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     padding: 60px 0 200px 0;

@@ -1,14 +1,14 @@
+import colorSharp from "../assets/img/color-sharp.png"
 import web from '../assets/skills/web.png'
 import net from '../assets/skills/net.png'
 import reactNative from '../assets/skills/react-native.png'
 import photoshop from '../assets/skills/photoshop.png'
 import premierePro from '../assets/skills/premiere-pro.png'
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+
+// import arrow1 from "../assets/img/arrow1.svg";
+// import arrow2 from "../assets/img/arrow2.svg";
 
 import Carousel from 'react-multi-carousel';
-
 
 import ProgressBar from "./ProgressBar";
 
@@ -19,15 +19,15 @@ const Skills = () => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
-            items: 5
+            items: 6
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 4
+            items: 5
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 3
+            items: 4
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -56,7 +56,7 @@ const Skills = () => {
                                     <h5>Web Development</h5>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >
-                                    <ProgressBar percentage={90} image={reactNative} color='#D9F0F7' />
+                                    <ProgressBar percentage={90} image={reactNative} color='#61DAFA' />
                                     <h5>React Native</h5>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '1rem' }} >

@@ -1,8 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/projects/proj1.png";
+import projImg2 from "../assets/projects/proj2.png";
+import projImg3 from "../assets/projects/proj3.png";
+import projImg4 from "../assets/projects/proj4.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -28,6 +29,11 @@ const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
       imgUrl: projImg1,
     },
     {
@@ -35,15 +41,10 @@ const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg2,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
