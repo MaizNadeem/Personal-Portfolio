@@ -1,50 +1,83 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
-export const Newsletter = ({ status, message, onValidated }) => {
+export const Newsletter = () => {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState(null);
+  const [message, setMessage] = useState("");
 
-    const [email, setEmail] = useState('');
+  const clearFields = () => {
+    setEmail("");
+    setStatus(null);
+    setMessage("");
+  };
 
-    const clearFields = () => {
-        setEmail('');
+  const sendResumeRequest = async (email) => {
+    try {
+      const response = await fetch("http://localhost:5000/send-resume", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus("success");
+        setMessage("Resume sent successfully!");
+      } else {
+        setStatus("error");
+        setMessage("Resume sending failed. Please try again later.");
+      }
+    } catch (error) {
+      setStatus("error");
+      setMessage("An error occurred. Please try again later.");
     }
+  };
 
-    useEffect(() => {
-        if (status === 'success')
-            clearFields();
-    }, [status])
+  const handleResumeRequest = (e) => {
+    e.preventDefault();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    
-        if (email && email.indexOf("@") > -1) {
-            onValidated({
-                EMAIL: email
-            });
-        }
-    };
+    if (email && email.indexOf("@") > -1) {
+      sendResumeRequest(email);
+    }
+  };
 
-    return (
-        <Col lg={12}>
-            <div className="newsletter-bx wow slideInUp">
-            <Row>
-                <Col lg={12} md={6} xl={5}>
-                    <h3>Subscribe to my Newsletter <br /> to get latest updates about my work</h3>
-                </Col>
-                <Col md={6} xl={7}>
-                <form onSubmit={handleSubmit}>
-                    <div className="new-email-bx">
-                        <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-                {status === 'sending' && <Alert>Sending...</Alert>}
-                {status === 'error' && <Alert variant="danger">{message}</Alert>}
-                {status === 'success' && <Alert variant="success">{message}</Alert>}
-                </Col>
-            </Row>
+  const handleDownloadResume = () => {
+    window.location.href = "http://localhost:5000/download-resume";
+  };
+
+  return (
+    <Col lg={12}>
+      <div className="newsletter-bx wow slideInUp">
+        <Row>
+          <Col lg={12} md={6} xl={5}>
+            <h3 style={{ textAlign: "left", display: "flex", alignItems: "center", height: "100%" }}>
+              Download my resume or enter your email to get it directly in your inbox!
+            </h3>
+          </Col>
+          <Col md={6} xl={7}>
+            <div className="download-resume" onClick={handleDownloadResume} >
+              <button>Download Resume</button>
             </div>
-        </Col>
-    )
-
-}
+            <form onSubmit={handleResumeRequest}>
+              <div className="new-email-bx">
+                <input
+                  value={email}
+                  type="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email Address"
+                />
+                <button type="submit">Get Resume</button>
+              </div>
+            </form>
+            {status === "error" && <Alert variant="danger">{message}</Alert>}
+            {status === "success" && <Alert variant="success">{message}</Alert>}
+          </Col>
+        </Row>
+      </div>
+    </Col>
+  );
+};

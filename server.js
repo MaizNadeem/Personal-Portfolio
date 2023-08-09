@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const path = require("path");
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
@@ -52,6 +53,38 @@ router.post("/contact", (req, res) => {
             res.json({ code: 200, status: "Message Sent" });
         }
     });
+});
+
+router.post("/send-resume", (req, res) => {
+    const email = req.body.email;
+    
+    const resumePath = path.join(__dirname, "resume.pdf"); // Update to the correct filename
+    const resumeAttachment = {
+        filename: "resume.pdf",
+        path: resumePath,
+    };
+
+    const mail = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: "Your Resume from Maiz",
+        text: `Hello,\n\nThank you for your interest in my profile. I am pleased to share my resume with you as requested. Please find the attached resume for your consideration.\n\nIf you have any further inquiries or would like to discuss my qualifications in more detail, feel free to contact me at your convenience.\n\nThank you for your time and consideration.\n\nBest regards,\nMuhammad Maiz`,
+        attachments: [resumeAttachment],
+    };
+      
+
+    contactEmail.sendMail(mail, (error) => {
+        if (error) {
+            res.json(error);
+        } else {
+            res.json({ code: 200, status: "Resume Sent" });
+        }
+    });
+});
+
+app.get("/download-resume", (req, res) => {
+    const resumePath = path.join(__dirname, "resume.pdf");
+    res.download(resumePath, "Maiz-Resume.pdf");
 });
 
 const PORT = process.env.PORT || 5000;

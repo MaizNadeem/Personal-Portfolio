@@ -60,7 +60,7 @@ const Banner = () => {
             <Col xs={12} md={6} xl={7}>
                 <TrackVisibility>
                 {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div className={isVisible ? "animate__animated animate__fadeIn textalignmentbanner" : "textalignmentbanner"}>
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{`Hi! I'm Maiz,`} <span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
