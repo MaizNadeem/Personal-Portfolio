@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
+import { FaDownload } from 'react-icons/fa';
 
 export const Newsletter = () => {
     const [email, setEmail] = useState("");
@@ -54,6 +55,7 @@ export const Newsletter = () => {
             </Col>
             <Col md={6} xl={7}>
                 <div className="download-resume" onClick={handleDownloadResume} >
+                    <FaDownload size={20} style={{ color:"white", marginRight: "10px", marginBottom: "3px" }} />
                     <button>Download Resume</button>
                 </div>
                 <form onSubmit={handleResumeRequest}>

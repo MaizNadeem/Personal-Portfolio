@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/Logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -38,7 +38,7 @@ const NavigationBar = () => {
         <Router>
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#home" className='logo'>
                 <img src={logo} alt='Logo' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -61,13 +61,31 @@ const NavigationBar = () => {
                     className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
                     onClick={() => onUpdateActiveLink('projects')}
                 >Projects</Nav.Link>
+                <Nav.Link
+                    href="#aboutme"
+                    className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'}
+                    onClick={() => onUpdateActiveLink('aboutme')}
+                >About Me</Nav.Link>
+                <Nav.Link
+                    href="#footer"
+                    className={activeLink === 'footer' ? 'active navbar-link' : 'navbar-link'}
+                    onClick={() => onUpdateActiveLink('footer')}
+                >My Resume</Nav.Link>
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='#social1'><img src={navIcon1} alt='Social' /></a>
-                    <a href='#social2'><img src={navIcon2} alt='Social' /></a>
-                    <a href='#social3'><img src={navIcon3} alt='Social' /></a>
-                    <a href='#social4'><img src={navIcon4} alt='Social' /></a>
+                    <a href='https://www.linkedin.com/in/m-maiz-nadeem-020949176' target="_blank" rel="noopener noreferrer">
+                        <img src={navIcon1} alt='Social' />
+                    </a>
+                    <a href='https://twitter.com/MaizNadeem' target="_blank" rel="noopener noreferrer">
+                        <img src={navIcon2} alt='Social' />
+                    </a>
+                    <a href='https://www.instagram.com/m.maiznadeem' target="_blank" rel="noopener noreferrer">
+                        <img src={navIcon3} alt='Social' />
+                    </a>
+                    <a href='https://github.com/MaizNadeem' target="_blank" rel="noopener noreferrer">
+                        <img src={navIcon4} alt='Social' />
+                    </a>
                 </div>
                 <HashLink to='#connect'>
                     <button className="vvd"><span>Let's Connect</span></button>
