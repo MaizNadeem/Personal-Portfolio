@@ -14,34 +14,46 @@ const Projects = () => {
 
     const projects = [
         {
+            id: 1,
             title: "Homyz - Real Estate Website",
             description: "A comprehensive real estate website that simplifies property search and transactions",
             imgUrl: projImg1,
+            url: "https://github.com/MaizNadeem/Real-Estate-Web",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            id: 2,
+            title: "Deliveroo - Food Delivery Clone",
+            description: "A Deliveroo-inspired food delivery clone, highlighting react native + firestore development",
             imgUrl: projImg2,
+            url: "https://github.com/MaizNadeem/Deliveroo-2.0",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            id: 3,
+            title: "Lifestream - Blood Donation",
+            description: "A user-friendly, enterprise level WPF-based Blood Donation System with a robust database",
             imgUrl: projImg3,
+            url: "https://github.com/MaizNadeem/Lifestream-WPF",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            id: 4,
+            title: "NFT Marketplace",
+            description: "An NFT Marketplace: A sleek UI design for a digital platform in trading unique digital assets",
             imgUrl: projImg4,
+            url: "https://github.com/MaizNadeem/NFT-Marketplace",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            id: 5,
+            title: "Pig Game",
+            description: "A fun and interactive multiplayer dice game",
             imgUrl: projImg5,
+            url: "https://github.com/MaizNadeem/Pig-Game",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            id: 6,
+            title: "ZEGO Cloud: Chat App",
+            description: "A feature-rich chat application powered by cloud technology for seamless real-time communication",
             imgUrl: projImg6,
+            url: "https://github.com/MaizNadeem/Zego-ChatApp",
         },
     ];
 
@@ -71,10 +83,10 @@ const Projects = () => {
                         <Tab.Pane eventKey="first">
                         <Row>
                             {
-                            projects.map((project, index) => {
+                            projects.map((project) => {
                                 return (
                                     <ProjectCard
-                                        key={index}
+                                        key={project.id}
                                         {...project}
                                     />
                                 )

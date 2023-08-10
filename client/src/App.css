@@ -506,12 +506,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     z-index: -4;
 }
 .proj-container {
+    z-index: 2;
     background-color: #151515;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 24px;
+    transition: background 300ms ease-in-out;
 }
+.card:hover > .proj-container {
+    background: rgb(26, 26, 26, 0.6);
+    backdrop-filter: blur(80px);
+}
+  
 .proj-details-container {
     height: 185px;
     display: flex;
@@ -529,16 +535,52 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     line-height: 1;
 }
 .proj-text h4 {
+    color: white;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.8px;
     margin-bottom: 4px;
 }
 .proj-text span {
+    color: #aaa6a6;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.8px;
 }
+.card {
+    background: rgb(128 128 128 / 0.2);
+    padding : 3px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+
+.blob {
+    filter: blur(40px);
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: -10px;
+    width: calc(50% + 20px);
+    height: calc(50% + 20px);
+    border-radius: 50%;
+    background: rgb(255, 255, 255, 0.5);
+}
+.fakeblob {
+    display: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+  
+  
+  
 /************ Contact CSS ************/
 .contact {
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
