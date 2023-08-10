@@ -9,7 +9,7 @@ const FirstProjectHTML = () => {
         <div className="html-container">
             <div className="button-container-modal">
                 <Button className="custom-button text-only-modal">
-                    <a href='https://homyz-real-estate.vercel.app/'>View Live Demo</a>
+                    <span>View Live Demo</span>
                 </Button>
                 <Button className="custom-button icon-and-text-modal" >
                     <AiOutlineLink size={20} style={{ marginRight: "10px" }} />

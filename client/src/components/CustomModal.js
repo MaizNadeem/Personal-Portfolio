@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AiOutlineClose } from 'react-icons/ai'
 import Modal from 'react-bootstrap/Modal';
 
 import FirstProjectHTML from '../assets/projectshtml/FirstProjectHTML';
@@ -28,11 +29,10 @@ const CustomModal = ({ id, title, description, imgUrl, url, banUrl, showModal, t
                 }}
             >
                 <div className="modal-content">
-                    <Modal.Header closeButton>
-                        <Modal.Title id="example-custom-modal-styling-title">
-                            <h1>
-                                {title}
-                            </h1>
+                    <Modal.Header>
+                        <Modal.Title id="example-custom-modal-styling-title modal-title">
+                            <h1>{title}</h1>
+                            <AiOutlineClose size={25} color="white" onClick={handleClose} />
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body style={{ maxHeight: '70vh', overflowY: 'auto' }}>

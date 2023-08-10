@@ -1,28 +1,15 @@
-h1 {
+.html-container h1 {
     font-weight: 700;
-    margin: 10px 0;
+    margin: 20px 0;
 }
-h2, p, ul, ol {
+.html-container h2, p, ul, ol {
     margin: 20px 0 !important;
 }
-ul, ol {
+.html-container ul, ol {
     list-style: none;
 }
 
-a {
-    color: #ffffffe0;
-}
-a:hover {
-    color: white;
-}
-a:active {
-    color: white;
-}
-a:visited {
-    color: #ffffffe0;
-}
-
-strong{
+.html-container strong{
     font-weight: 500;
 }
 

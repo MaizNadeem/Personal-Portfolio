@@ -555,8 +555,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     overflow: hidden;
     margin-bottom: 24px;
 }
-
-
 .blob {
     filter: blur(40px);
     position: absolute;
@@ -578,8 +576,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     height: 200px;
     border-radius: 50%;
 }
-  
-  
   
 /************ Contact CSS ************/
 .contact {
@@ -790,18 +786,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-radius: 20px;
     overflow: hidden;
 }
-.modal-content h1 {
+.modal-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.modal-title h1 {
     font-size: 30px;
-    margin-left: 35px;
+    margin-left: 10px;
 }
-
-.close-btn {
-    color: white; /* Change the color of the close button */
-    font-size: 20px; /* Change the font size of the close button */
+.modal-title svg {
+    cursor: pointer;
+    scale: 1;
+    transition: all 300ms ease-in-out;
 }
-
-/* Style the close button on hover */
-.close:hover {
-    color: red; /* Change the color on hover */
+.modal-title svg:hover {
+    scale: 1.1;
 }
 
