@@ -6,6 +6,12 @@ import projImg3 from "../assets/projects/proj3.png";
 import projImg4 from "../assets/projects/proj4.png";
 import projImg5 from "../assets/projects/proj5.png";
 import projImg6 from "../assets/projects/proj6.png";
+import projBan1 from "../assets/banners/proj1.png";
+import projBan2 from "../assets/banners/proj2.png";
+import projBan3 from "../assets/banners/proj3.png";
+import projBan4 from "../assets/banners/proj4.png";
+import projBan5 from "../assets/banners/proj5.png";
+import projBan6 from "../assets/banners/proj6.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -19,6 +25,7 @@ const Projects = () => {
             description: "A comprehensive real estate website that simplifies property search and transactions",
             imgUrl: projImg1,
             url: "https://github.com/MaizNadeem/Real-Estate-Web",
+            banUrl: projBan1,
         },
         {
             id: 2,
@@ -26,6 +33,7 @@ const Projects = () => {
             description: "A Deliveroo-inspired food delivery clone, highlighting react native + firestore development",
             imgUrl: projImg2,
             url: "https://github.com/MaizNadeem/Deliveroo-2.0",
+            banUrl: projBan2,
         },
         {
             id: 3,
@@ -33,6 +41,7 @@ const Projects = () => {
             description: "A user-friendly, enterprise level WPF-based Blood Donation System with a robust database",
             imgUrl: projImg3,
             url: "https://github.com/MaizNadeem/Lifestream-WPF",
+            banUrl: projBan3,
         },
         {
             id: 4,
@@ -40,6 +49,7 @@ const Projects = () => {
             description: "An NFT Marketplace: A sleek UI design for a digital platform in trading unique digital assets",
             imgUrl: projImg4,
             url: "https://github.com/MaizNadeem/NFT-Marketplace",
+            banUrl: projBan4,
         },
         {
             id: 5,
@@ -47,6 +57,7 @@ const Projects = () => {
             description: "A fun and interactive multiplayer dice game",
             imgUrl: projImg5,
             url: "https://github.com/MaizNadeem/Pig-Game",
+            banUrl: projBan5,
         },
         {
             id: 6,
@@ -54,6 +65,7 @@ const Projects = () => {
             description: "A feature-rich chat application powered by cloud technology for seamless real-time communication",
             imgUrl: projImg6,
             url: "https://github.com/MaizNadeem/Zego-ChatApp",
+            banUrl: projBan6,
         },
     ];
 

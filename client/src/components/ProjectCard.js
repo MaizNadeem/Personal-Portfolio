@@ -4,7 +4,7 @@ import { AiOutlineLink, AiOutlineExpand } from 'react-icons/ai';
 
 import CustomModal from "./CustomModal";
 
-export const ProjectCard = ({ id, title, description, imgUrl, url }) => {
+export const ProjectCard = ({ id, title, description, imgUrl, url, banUrl }) => {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -45,11 +45,11 @@ export const ProjectCard = ({ id, title, description, imgUrl, url }) => {
                     <div className="button-container">
                         <Button className="custom-button text-only" onClick={toggleModal}>
                             <AiOutlineExpand size={15} style={{ marginRight: "7px", marginBottom: "1px" }} />
-                            <text>Read More</text>
+                            <>Read More</>
                         </Button>
                         <Button className="custom-button icon-and-text" onClick={handleGoToSource} >
                             <AiOutlineLink size={15} style={{ marginRight: "5px" }} />
-                            <text>Go to Source</text>
+                            <>Go to Source</>
                         </Button>
                     </div>
                 </div>
@@ -57,7 +57,16 @@ export const ProjectCard = ({ id, title, description, imgUrl, url }) => {
             <div className="blob"></div>
             <div className="fakeblob"></div>
             </div>
-            {showModal && <CustomModal title={title} description={description} showModal={showModal} toggleModal={toggleModal} />}
+            {showModal &&   <CustomModal 
+                                id={id}
+                                title={title}
+                                description={description}
+                                imgUrl={imgUrl}
+                                url={url}
+                                banUrl={banUrl}
+                                showModal={showModal} 
+                                toggleModal={toggleModal}
+                            />}
         </Col>
     );
 };

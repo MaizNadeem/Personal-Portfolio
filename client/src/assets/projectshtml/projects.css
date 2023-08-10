@@ -1,0 +1,64 @@
+h1 {
+    font-weight: 700;
+    margin: 10px 0;
+}
+h2, p, ul, ol {
+    margin: 20px 0 !important;
+}
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: #ffffffe0;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: white;
+}
+a:visited {
+    color: #ffffffe0;
+}
+
+strong{
+    font-weight: 500;
+}
+
+.technologies > img {
+    height: 30px;
+    width: auto;
+    margin: 2px;
+}
+
+.button-container-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0;
+}
+.text-only-modal {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    color: white;
+    border: 1px solid linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%) !important;
+    transition: 0.3s ease-in-out;
+    font-size: 20px !important;
+}
+.icon-and-text-modal {
+    font-size: 20px !important;
+    border-radius: 0;
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+    transition: 0.3s ease-in-out;
+}
+.icon-and-text-modal:hover {
+    border: 1px solid white !important;
+    color: white !important;
+    background-color: #151515 !important;
+}
+.icon-and-text-modal:active {
+    border: 1px solid white !important;
+    background-color: black !important;
+}

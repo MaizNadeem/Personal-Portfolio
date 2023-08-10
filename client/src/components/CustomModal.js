@@ -1,7 +1,14 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
-const CustomModal = ({ title, description, showModal, toggleModal }) => {
+import FirstProjectHTML from '../assets/projectshtml/FirstProjectHTML';
+import SecondProjectHTML from '../assets/projectshtml/SecondProjectHTML';
+import ThirdProjectHTML from '../assets/projectshtml/ThirdProjectHTML';
+import FourthProjectHTML from '../assets/projectshtml/FourthProjectHTML';
+import FifthProjectHTML from '../assets/projectshtml/FifthProjectHTML';
+import SixthProjectHTML from '../assets/projectshtml/SixthProjectHTML';
+
+const CustomModal = ({ id, title, description, imgUrl, url, banUrl, showModal, toggleModal }) => {
     const [show, setShow] = useState(showModal);
 
     const handleClose = () => {
@@ -14,17 +21,30 @@ const CustomModal = ({ title, description, showModal, toggleModal }) => {
             <Modal
                 show={show}
                 onHide={handleClose}
-                dialogClassName="modal-90w"
+                dialogClassName="custom-modal"
                 aria-labelledby="example-custom-modal-styling-title"
+                style={{
+                    zIndex: 9999,
+                }}
             >
-                <Modal.Header closeButton>
-                    <Modal.Title id="example-custom-modal-styling-title">
-                        {title}
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <p>{description}</p>
-                </Modal.Body>
+                <div className="modal-content">
+                    <Modal.Header closeButton>
+                        <Modal.Title id="example-custom-modal-styling-title">
+                            <h1>
+                                {title}
+                            </h1>
+                        </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body style={{ maxHeight: '70vh', overflowY: 'auto' }}>
+                        <img src={banUrl} alt="Banner" style={{ borderRadius: "15px" }} />
+                        { id === 1 && <FirstProjectHTML />}
+                        { id === 2 && <SecondProjectHTML />}
+                        { id === 3 && <ThirdProjectHTML />}
+                        { id === 4 && <FourthProjectHTML />}
+                        { id === 5 && <FifthProjectHTML />}
+                        { id === 6 && <SixthProjectHTML />}
+                    </Modal.Body>
+                </div>
             </Modal>
         </>
     );
