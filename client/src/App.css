@@ -459,9 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12px;
-    margin-bottom: 10px;
-    width: 90%;
+    width: 100%;
 }
 .custom-button {
     font-size: 12px;
@@ -476,33 +474,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     justify-content: center;
 }
 .custom-button.text-only {
-    background-color: transparent;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     color: white;
-    border: 1px solid white;
+    border: 1px solid linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     transition: 0.3s ease-in-out;
 }
 .custom-button.text-only:hover {
-    background-color: #3498db;
-    color: #fff;
-}
-.custom-button.text-only:active {
-    background-color: #2980b9;
-    border-color: #2980b9;
+    scale: 1.03;
 }
 .custom-button.icon-and-text {
-    background-color: #3498db;
-    color: #fff;
+    border-radius: 0 0 10px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
     transition: 0.3s ease-in-out;
 }
 .custom-button.icon-and-text:hover {
-    background-color: #2980b9;
+    color: white;
+    background-color: #151515;
 }
 .custom-button.icon-and-text:active {
-    background-color: #1f669c;
-}
-.custom-button span {
-    margin-left: 8px;
-    vertical-align: middle;
+    border: 1px solid white;
+    background-color: black;
 }
 .background-image-right {
     top: 20%;
@@ -520,12 +513,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-bottom: 24px;
 }
 .proj-details-container {
-    height: 175px;
+    height: 185px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 15px;
 }
 .button-container {
     display: flex;
@@ -687,6 +680,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-weight: 500;
     letter-spacing: 0.5px;
     border-radius: 8px;
+    transition: all 0.3s ease-in;
+}
+.new-email-bx button:hover {
+    scale: 0.95;
 }
 .download-resume {
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -695,10 +692,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     cursor: pointer;
     letter-spacing: 0.5px;
     border-radius: 8px;
+    transition: all 0.3s ease-in;
 }
 .download-resume > button {
     color: white;
     font-weight: 500;
+}
+.download-resume:hover {
+    scale: 0.98;
 }
 .footer img {
     width: 26%;

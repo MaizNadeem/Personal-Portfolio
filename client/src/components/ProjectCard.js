@@ -1,5 +1,5 @@
 import { Col, Button } from "react-bootstrap";
-import { AiOutlineLink } from 'react-icons/ai';
+import { AiOutlineLink, AiOutlineExpand } from 'react-icons/ai';
 
 export const ProjectCard = ({ title, description, imgUrl }) => {
     return (
@@ -12,7 +12,10 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
                         <span>{description}</span>
                     </div>
                     <div className="button-container">
-                        <Button className="custom-button text-only" >Read More</Button>
+                        <Button className="custom-button text-only" >
+                            <AiOutlineExpand size={15} style={{ marginRight: "7px", marginBottom: "2px" }} />
+                            <text>Read More</text>
+                        </Button>
                         <Button className="custom-button icon-and-text" >
                             <AiOutlineLink size={15} style={{ marginRight: "5px" }} />
                             <text>Go to Source</text>
