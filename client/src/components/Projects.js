@@ -11,6 +11,12 @@ import projBan3 from "../assets/banners/proj3.png";
 import projBan4 from "../assets/banners/proj4.png";
 import projBan5 from "../assets/banners/proj5.png";
 import projBan6 from "../assets/banners/proj6.png";
+import thumb1 from "../assets/thumbnails/Thumbnail1.jpg";
+import thumb2 from "../assets/thumbnails/Thumbnail2.jpg";
+import thumb3 from "../assets/thumbnails/Thumbnail3.jpg";
+import thumb4 from "../assets/thumbnails/Thumbnail4.jpg";
+import thumb5 from "../assets/thumbnails/Thumbnail5.jpg";
+import thumb6 from "../assets/thumbnails/Thumbnail6.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -75,10 +81,45 @@ const Projects = () => {
     const videos = [
         {
             id: 1,
-            title: "",
-            description: "",
-            imgUrl: "",
-            url: "",
+            title: "Despacito | A Scrap Edit",
+            description: "Relied heavily on Adobe After Effects. This Video Includes Short Rotoscoping, Some of 3D Tracking and many plugins for immersive visual effects. A great way to portray gaming edits.",
+            imgUrl: thumb1,
+            url: "https://youtu.be/v3kiFn9BV-A",
+        },
+        {
+            id: 2,
+            title: "Lalo Salamanca - Better Call Saul",
+            description: "In a masterful edit within Premiere Pro, I transformed Lalo Salamanca's character in Better Call Saul into a captivating cinematic narrative, skillfully weaving his story with visual finesse.",
+            imgUrl: thumb2,
+            url: "https://www.instagram.com/reel/Cmgxzdio3x7/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+        },
+        {
+            id: 3,
+            title: "Baloch Nationalism in Pakistan",
+            description: "Year-long relationship, in managing the social channels for the esteemed novelist Tariq Ismail Sagar, reflects a significant contribution to his online presence.",
+            imgUrl: thumb3,
+            url: "https://youtu.be/R2ZasDkPhCQ",
+        },
+        {
+            id: 4,
+            title: "1000+ Skills to become Freelancer",
+            description: "1000+ Skills to become Millionaire using Semrush.com | eCommercewala",
+            imgUrl: thumb4,
+            url: "https://fb.watch/iJH64zDnej/?mibextid=NnVzG8",
+        },
+        {
+            id: 5,
+            title: "Future of Wars | Drone Soldiers",
+            description: "Ecommerce in Future Digital War using AI-Based Drone Soldiers | eCommercewala",
+            imgUrl: thumb5,
+            url: "https://fb.watch/iJGWer-zLn/?mibextid=NnVzG8",
+        },
+        {
+            id: 6,
+            title: "One Cirriculum Agenda",
+            description: "Lets meet Dr. Zaar in this Podcast: talking about making improvements in our typical system",
+            imgUrl: thumb6,
+            url: "https://fb.watch/iJGZdIJFfR/?mibextid=NnVzG8",
         },
     ]
 
@@ -127,11 +168,11 @@ const Projects = () => {
                         </Row>
                         <Row>
                             {
-                                projects.map((project) => {
+                                videos.map((video) => {
                                     return (
                                         <VideoCard
-                                            key={project.id}
-                                            {...project}
+                                            key={video.id}
+                                            {...video}
                                         />
                                     )
                                 })

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Col } from "react-bootstrap";
 
-const VideoCard = ({ id, title, description, imgUrl, url, banUrl }) => {
+const VideoCard = ({ id, title, description, imgUrl, url }) => {
 
     useEffect(() => {
         const allCards = document.querySelectorAll(".card");
@@ -25,7 +25,13 @@ const VideoCard = ({ id, title, description, imgUrl, url, banUrl }) => {
 
     return (
         <Col size={12} sm={6} md={4}>
-            <div className="card">
+            <div className="card" 
+                style={{ 
+                    cursor: "pointer", 
+                    height: id < 4 ? "330px" : "295px" 
+                }}
+                onClick={handleGoToVideo}
+            >
                 <div className="proj-container">
                     <img src={imgUrl} alt="Project-Card" />
                     <div className="proj-details-container">
