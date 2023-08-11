@@ -1,5 +1,4 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import ReactPlayer from "react-player";
 import projImg1 from "../assets/projects/proj1.png";
 import projImg2 from "../assets/projects/proj2.png";
 import projImg3 from "../assets/projects/proj3.png";
@@ -18,6 +17,7 @@ import TrackVisibility from 'react-on-screen';
 
 import { ProjectCard } from "./ProjectCard";
 import VideoCard from "./VideoCard";
+import WistiaVideo from "./WistiaVideo";
 
 const Projects = () => {
 
@@ -121,7 +121,9 @@ const Projects = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                         <Row>
-                            
+                            <div className="wistia-video">
+                                <WistiaVideo />
+                            </div>
                         </Row>
                         <Row>
                             {
