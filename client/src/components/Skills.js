@@ -5,9 +5,6 @@ import reactNative from '../assets/skills/react-native.png'
 import photoshop from '../assets/skills/photoshop.png'
 import premierePro from '../assets/skills/premiere-pro.png'
 
-// import arrow1 from "../assets/img/arrow1.svg";
-// import arrow2 from "../assets/img/arrow2.svg";
-
 import Carousel from 'react-multi-carousel';
 
 import ProgressBar from "./ProgressBar";
@@ -27,7 +24,7 @@ const Skills = () => {
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 4
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },

@@ -84,5 +84,5 @@ app.get("/download-resume", (req, res) => {
     res.download(resumePath, "Maiz-Resume.pdf");
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server Running on Port ${PORT}`));

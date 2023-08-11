@@ -35,7 +35,7 @@ const FourthProjectHTML = () => {
 
             <h2>Download</h2>
 
-            <p>You can download the Android build of the app from here: <a href="#">NFT Marketplace App (apk)</a></p>
+            <p>You can download the Android build of the app from here: <a href="https://github.com/MaizNadeem/NFT-Marketplace.git">NFT Marketplace App (apk)</a></p>
 
             <h2>Deployment</h2>
 

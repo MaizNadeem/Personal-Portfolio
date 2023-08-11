@@ -1,5 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import ReactPlayer from "react-player";
 import projImg1 from "../assets/projects/proj1.png";
 import projImg2 from "../assets/projects/proj2.png";
 import projImg3 from "../assets/projects/proj3.png";
@@ -15,6 +15,9 @@ import projBan6 from "../assets/banners/proj6.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
+import { ProjectCard } from "./ProjectCard";
+import VideoCard from "./VideoCard";
 
 const Projects = () => {
 
@@ -69,7 +72,17 @@ const Projects = () => {
         },
     ];
 
-  return (
+    const videos = [
+        {
+            id: 1,
+            title: "",
+            description: "",
+            imgUrl: "",
+            url: "",
+        },
+    ]
+
+    return (
         <section className="project" id="projects">
         <Container>
             <Row>
@@ -95,19 +108,33 @@ const Projects = () => {
                         <Tab.Pane eventKey="first">
                         <Row>
                             {
-                            projects.map((project) => {
-                                return (
-                                    <ProjectCard
-                                        key={project.id}
-                                        {...project}
-                                    />
-                                )
-                            })
+                                projects.map((project) => {
+                                    return (
+                                        <ProjectCard
+                                            key={project.id}
+                                            {...project}
+                                        />
+                                    )
+                                })
                             }
                         </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Row>
+                            
+                        </Row>
+                        <Row>
+                            {
+                                projects.map((project) => {
+                                    return (
+                                        <VideoCard
+                                            key={project.id}
+                                            {...project}
+                                        />
+                                    )
+                                })
+                            }
+                        </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                         <p>In my portfolio, I've masterfully combined video editing and software development, presenting a unique blend of creativitystorytelling and technical innovation. By seamlessly integrating these skills, I offer captivating visual experiences alongside functional digital solutions, demonstrating my versatility and proficiency across diverse domains.</p>
