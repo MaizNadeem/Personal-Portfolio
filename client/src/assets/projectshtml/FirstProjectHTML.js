@@ -1,17 +1,17 @@
 import React from 'react';
 
 import './projects.css'
-import { AiOutlineExpand, AiOutlineLink } from 'react-icons/ai';
+import { AiOutlineLink } from 'react-icons/ai';
 import { Button } from 'react-bootstrap';
 
 const FirstProjectHTML = () => {
     return (
         <div className="html-container">
             <div className="button-container-modal">
-                <Button className="custom-button text-only-modal">
+                <Button className="custom-button text-only-modal" onClick={() => window.open("https://homyz-real-estate.vercel.app/", "_blank")}>
                     <span>View Live Demo</span>
                 </Button>
-                <Button className="custom-button icon-and-text-modal" >
+                <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/Real-Estate-Web", "_blank")}>
                     <AiOutlineLink size={20} style={{ marginRight: "10px" }} />
                     <>Go to Source</>
                 </Button>
@@ -102,6 +102,9 @@ const FirstProjectHTML = () => {
             <h2>Contact</h2>
             <p>Maiz - <a href="mailto:contact.maiznadeem@gmail.com">contact.maiznadeem@gmail.com</a></p>
             <p>Project Link: <a href="https://github.com/MaizNadeem/Real-Estate-Web">View Github</a></p>
+        
+            <hr />
+            <h4 align="center">© M. Maiz Nadeem</h4>
         </div>
     );
 }

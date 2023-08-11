@@ -2,29 +2,38 @@
     font-weight: 700;
     margin: 20px 0;
 }
-.html-container h2, p, ul, ol {
+.html-container h2,
+.html-container p,
+.html-container ul,
+.html-container ol {
     margin: 20px 0 !important;
 }
-.html-container ul, ol {
+.html-container ul,
+.html-container ol {
     list-style: none;
 }
-
-.html-container strong{
+.html-container strong {
     font-weight: 500;
 }
 
-.technologies > img {
-    height: 30px;
-    width: auto;
-    margin: 2px;
+.html-container pre {
+    margin-top: 10px;
+    background-color: #151515;
+    color: #d1d5da;
+    border-radius: 4px;
+    padding: 16px;
+    overflow: auto;
+}
+  
+.html-container code {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 14px;
+    color: #d1d5da;
+    background-color: #151515;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.button-container-modal {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 30px 0;
-}
 .text-only-modal {
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     color: white;
@@ -48,4 +57,70 @@
 .icon-and-text-modal:active {
     border: 1px solid white !important;
     background-color: black !important;
+}
+
+
+.technologies > img {
+    height: 30px;
+    width: auto;
+    margin: 2px;
+}
+
+.button-container-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.login-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-screen > img {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+.main-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-screen > img {
+    height: 60vh;
+    width: auto;
+    margin: 20px;
+}
+.other-views {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.other-views > img {
+    margin: 5px;
+    border-radius: 5px;
+}
+.erd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.erd > img {
+    height: 60vh;
+    width: auto;
+    margin: 20px;
+}
+
+.nft-screenshots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft-screenshots > img {
+    height: 80vh;
+    width: auto;
+    border-radius: 5px;
 }
