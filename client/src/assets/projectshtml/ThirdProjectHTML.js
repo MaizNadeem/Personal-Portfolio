@@ -10,7 +10,7 @@ const ThirdProjectHTML = () => {
 
             <div className="button-container-modal">
                 <Button className="custom-button text-only-modal" onClick={() => window.open("https://drive.google.com/file/d/1FtdHXHE4VaEmcc1aHR-ecpwvatUnHzYx/view?usp=sharing", "_blank")}>
-                    <span>Downlaod Installer</span>
+                    <span>Downlaod for Windows</span>
                 </Button>
                 <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/Lifestream-WPF.git", "_blank")}>
                     <AiOutlineLink size={20} style={{ marginRight: "10px" }} />

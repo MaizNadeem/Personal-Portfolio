@@ -5,8 +5,6 @@ import reactNative from '../assets/skills/react-native.png'
 import photoshop from '../assets/skills/photoshop.png'
 import premierePro from '../assets/skills/premiere-pro.png'
 
-
-
 import node from "../assets/icons/node.png"
 import react from "../assets/icons/react.png"
 import redux from "../assets/icons/redux.png"
@@ -24,7 +22,7 @@ import git from "../assets/icons/git.png"
 import vs from "../assets/icons/vs.png"
 import vscode from "../assets/icons/vscode.png"
 import javascript from "../assets/icons/javascript.png"
-import csharp from "../assets/icons/java.png"
+import csharp from "../assets/icons/csharp.png"
 import c from "../assets/icons/c.png"
 import cpp from "../assets/icons/cpp.png"
 import java from "../assets/icons/java.png"
@@ -102,13 +100,15 @@ const Skills = () => {
                                 </div>
                             </Carousel>
                             </div>
-                            <h4>Versatile Toolkit: Technologies, and Languages I've Engaged With</h4>
-                            <div className="image-gallery">
-                            {imagesArray.map((image, index) => (
-                                <div className="image-item">
-                                    <img src={image} alt={`Image ${index}`} />
+                            <div className="skills-icon-wrap">
+                                <h5>Versatile Toolkit: Technologies, and Languages I've Engaged With</h5>
+                                <div className="image-gallery">
+                                {imagesArray.map((image, index) => (
+                                    <div className="image-item">
+                                        <img src={image} alt={`Icon ${index}`} />
+                                    </div>
+                                ))}
                                 </div>
-                            ))}
                             </div>
                         </div>
                     </div>

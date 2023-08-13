@@ -10,7 +10,7 @@ const SecondProjectHTML = () => {
 
             <div className="button-container-modal">
                 <Button className="custom-button text-only-modal" onClick={() => window.open("https://drive.google.com/file/d/1yGeEmzMSG1cvEjTx2Am3kkB4xIG3apDv/view?usp=drive_link", "_blank")}>
-                    <span>Downlaod APK</span>
+                    <span>Downlaod for Android</span>
                 </Button>
                 <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/Deliveroo-2.0.git", "_blank")}>
                     <AiOutlineLink size={20} style={{ marginRight: "10px" }} />
