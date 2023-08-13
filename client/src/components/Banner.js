@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import TrackVisibility from 'react-on-screen';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 import Container from "react-bootstrap/Container";
@@ -62,23 +61,17 @@ const Banner = () => {
         <Container>
             <Row className="aligh-items-center">
             <Col xs={12} md={6} xl={7}>
-                <TrackVisibility>
-                {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn textalignmentbanner" : "textalignmentbanner"}>
+                <div className="animate__animated animate__fadeIn textalignmentbanner">
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{`Hi! I'm Maiz,`} <span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
                     <p>Dedicated to creating captivating digital experiences. With a blend of technical expertise and creative flair, I bring ideas to life through code and visual storytelling. As a lifelong learner, I'm always seeking new ways to push the boundaries of what's possible in the digital realm.</p>
                     <button onClick={handleDownloadResume}>Download Resume <ArrowRightCircle size={25} /></button>
-                </div>}
-                </TrackVisibility>
+                </div>
             </Col>
             <Col xs={12} md={6} xl={5}>
-                <TrackVisibility>
-                {({ isVisible }) =>
-                    <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                        <img src={headerImg} alt="Header Img"/>
-                    </div>}
-                </TrackVisibility>
+                <div className="animate__animated animate__zoomIn">
+                    <img src={headerImg} alt="Header Img"/>
+                </div>
             </Col>
             </Row>
         </Container>
