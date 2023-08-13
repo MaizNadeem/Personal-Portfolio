@@ -1,4 +1,4 @@
-[![Portfolio Banner](https://raw.githubusercontent.com/MaizNadeem/Personal-Portfolio/main/client/src/assets/Banner.png)]
+![Portfolio Banner](https://raw.githubusercontent.com/MaizNadeem/Personal-Portfolio/main/client/src/assets/Banner.png)
 
 # My Portfolio Website
 
