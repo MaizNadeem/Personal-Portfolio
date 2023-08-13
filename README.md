@@ -10,4 +10,4 @@ This is my portfolio website.
 
 Maiz - contact.maiznadeem@gmail.com
 
-Project Link: [View Github](https://github.com/MaizNadeem/Real-Estate-Web)
+Project Link: [View Github](https://github.com/MaizNadeem/Personal-Portfolio)
