@@ -17,6 +17,7 @@ import thumb3 from "../assets/thumbnails/Thumbnail3.jpg";
 import thumb4 from "../assets/thumbnails/Thumbnail4.jpg";
 import thumb5 from "../assets/thumbnails/Thumbnail5.jpg";
 import thumb6 from "../assets/thumbnails/Thumbnail6.jpg";
+import innovation2 from "../assets/img/innovation2.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -136,13 +137,13 @@ const Projects = () => {
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Dev Projects</Nav.Link>
+                            <Nav.Link eventKey="first">Software Dev Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Editing</Nav.Link>
+                            <Nav.Link eventKey="second">Video Editing</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third">Side Note</Nav.Link>
+                            <Nav.Link eventKey="third">Future Goals</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -180,7 +181,17 @@ const Projects = () => {
                         </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                        <p>In my portfolio, I've masterfully combined video editing and software development, presenting a unique blend of creativitystorytelling and technical innovation. By seamlessly integrating these skills, I offer captivating visual experiences alongside functional digital solutions, demonstrating my versatility and proficiency across diverse domains.</p>
+                        <Row>
+                            <Col>
+                                <div className="innovation-container">
+                                    <img src={innovation2} className="innovation-img" alt="Innovation Icon" />
+                                    <div className="future">
+                                        <h1>Future Aspirations</h1>
+                                        <p>As I continue on my journey as a Software Developer and Video Editor, my ambitions are fueled by a desire to push the boundaries of digital creativity. I aim to lead innovative projects that seamlessly integrate cutting-edge technology and captivating storytelling. By honing my skills in both coding and visual aesthetics, I aspire to create immersive digital experiences that resonate with audiences on a profound level. Through ongoing learning and collaboration, I seek to contribute to groundbreaking projects that leave a lasting impact in the realm of technology-driven artistry.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
                         </Tab.Pane>
                     </Tab.Content>
                     </Tab.Container>

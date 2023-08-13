@@ -382,6 +382,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: unset !important;
 }
 
+.gd-carousel-wrapper {
+    margin-bottom: 70px;
+}
+
 /************ Projects CSS ************/
 .project {
     padding: 80px 0;
@@ -808,3 +812,53 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-bottom: 20px;
 }
 
+.innovation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innovation-img {
+    height: 300px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.future {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.future p {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* Add this CSS to your stylesheet or a style tag */
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-item {
+    width: "auto";
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  

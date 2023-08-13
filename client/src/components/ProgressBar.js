@@ -59,7 +59,7 @@ const ProgressBar = ({ percentage, image, color }) => {
                     <img  style={{ borderRadius: 10 }} src={image} alt="doge" />
                 </div>
                 <div style={{ fontSize: 12, marginTop: 5 }}>
-                    <strong>{Math.round(currentPercentage)}%</strong>
+                    <strong>~{Math.round(currentPercentage)}%</strong>
                 </div>
             </CircularProgressbarWithChildren>
         </div>

@@ -16,7 +16,7 @@ const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false)
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
-    const toRotate = [ "Web Developer", "Mobile App Developer", "Video/VFX Editor" ]
+    const toRotate = [ "Software Developer", "Video Editor" ]
     const period = 500
 
     const tick = () => {
@@ -67,7 +67,7 @@ const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn textalignmentbanner" : "textalignmentbanner"}>
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{`Hi! I'm Maiz,`} <span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Dedicated to creating captivating digital experiences. With a blend of technical expertise and creative flair, I bring ideas to life through code and visual storytelling. As a lifelong learner, I'm always seeking new ways to push the boundaries of what's possible in the digital realm.</p>
                     <button onClick={handleDownloadResume}>Download Resume <ArrowRightCircle size={25} /></button>
                 </div>}
                 </TrackVisibility>
