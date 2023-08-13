@@ -18,7 +18,6 @@ import graphql from "../assets/icons/graphql.png"
 import gcp from "../assets/icons/gcp.png"
 import azure from "../assets/icons/azure.png"
 import firebase from "../assets/icons/firebase.png"
-import git from "../assets/icons/git.png"
 import vs from "../assets/icons/vs.png"
 import vscode from "../assets/icons/vscode.png"
 import javascript from "../assets/icons/javascript.png"
@@ -58,7 +57,7 @@ const Skills = () => {
         }
     };
 
-    const imagesArray = [ node, react, redux, tailwind, mongo, bootstrap, micnet, sqlserver, express, graphql, gcp, azure, firebase, git, vs, vscode, javascript, csharp, c, cpp, java, pr, ps, ae, canva ]
+    const imagesArray = [ node, react, redux, tailwind, mongo, bootstrap, micnet, sqlserver, express, graphql, gcp, azure, firebase, vs, vscode, javascript, csharp, c, cpp, java, pr, ps, ae, canva ]
 
     return (
         <section className="skill" id="skills">
