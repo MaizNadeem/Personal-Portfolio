@@ -382,10 +382,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: unset !important;
 }
 
-.gd-carousel-wrapper {
-    margin-bottom: 70px;
-}
-
 /************ Projects CSS ************/
 .project {
     padding: 80px 0;
@@ -848,7 +844,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.3) -5.91%, rgba(74, 47, 189, 0.3) 111.58%);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     padding: 10px;
     gap: 10px;
@@ -873,5 +869,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    padding: 30px 5px;
 }
   

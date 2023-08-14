@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-import "../tailwind.css";
 
 export const Meteors = ({ number }) => {
     const meteors = new Array(number || 20).fill(true);

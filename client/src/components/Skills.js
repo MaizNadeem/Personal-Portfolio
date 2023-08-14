@@ -66,7 +66,7 @@ const Skills = () => {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p>I have learnt many aspects of Development including Routing, APIs and caching.<br></br> My video editing skills help me to create stunning designs as I like making better designs.</p>
                             <div className="gd-carousel-wrapper">
                             <Carousel 
                                 swipeable={true}
@@ -99,7 +99,9 @@ const Skills = () => {
                                 </div>
                             </Carousel>
                             </div>
-                            <div className="skills-icon-wrap">
+ 
+                        </div>
+                        <div className="skills-icon-wrap">
                                 <h5>Versatile Toolkit: Technologies, and Languages I've Engaged With</h5>
                                 <div className="image-gallery">
                                 {imagesArray.map((image, index) => (
@@ -109,7 +111,6 @@ const Skills = () => {
                                 ))}
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
