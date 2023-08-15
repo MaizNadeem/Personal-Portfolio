@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Col, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { AiOutlineLink, AiOutlineExpand } from 'react-icons/ai';
 
 import CustomModal from "./CustomModal";
