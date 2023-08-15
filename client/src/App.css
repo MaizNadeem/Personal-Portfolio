@@ -93,7 +93,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-    padding: 18px 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -101,7 +101,7 @@ nav.navbar {
     transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-    padding: 0px 0;
+    padding: 10px 0;
     background-color: #121212;
 }
 nav.navbar a.navbar-brand {
@@ -247,7 +247,7 @@ body.navbar-collapse.show {
 
 @media (max-width: 991.98px) {
     nav.navbar {
-        padding: 10px 0;
+        padding: 20px 0;
     }
     nav.navbar .navbar-nav .nav-link.navbar-link {
         padding: 10px;
@@ -259,6 +259,8 @@ body.navbar-collapse.show {
     }
     nav.navbar.expanded {
         background-color: #121212;
+        padding: 10px 0 20px 0;
+        border-bottom: 1px solid #666;
     }
     .social-icon a {
         width: 30px;
@@ -289,12 +291,11 @@ body.navbar-collapse.show {
         margin: 4px 0;
         text-decoration: none;
     }
-}
-
-.nav-link.navbar-link.active {
-    background-color: #222;
-    position: relative;
-    border: 1px solid white;
+    .nav-link.navbar-link.active {
+        background-color: #222;
+        position: relative;
+        border: 1px solid white;
+    }
 }
 
 @media (max-width: 768px) {
@@ -943,7 +944,10 @@ body.navbar-collapse.show {
 
 
 .wistia-video {
-    margin: 0 0 0 0;
+    margin: auto 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .innovation-container {

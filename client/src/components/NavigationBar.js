@@ -54,6 +54,7 @@ const NavigationBar = () => {
     const handleLogoClick = () => {
         const links = document.querySelectorAll('.navbar-link');
         links.forEach(link => link.classList.remove('active'));
+        handleExpanded()
     }
 
     useEffect(() => {

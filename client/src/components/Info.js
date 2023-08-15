@@ -126,8 +126,8 @@ const Info = () => {
                 <h2 className="mb-12" style={{ fontWeight: 700, fontSize: "45px" }}>
                     About Me
                 </h2>
-                <div className='flex flex-row gap-10'>
-                    <div className="flex flex-col items-center w-1/2 relative gap-6">
+                <div className='flex flex-col md:flex-col lg:flex-row xl:flex-row gap-10 items-center justify-center'>
+                    <div className="flex flex-col items-center w-full md:w-full lg:w-1/2 xl:w-1/2 relative gap-6">
                         <SectionToggle
                         activeSection={activeSection}
                         onToggle={toggleSection}
@@ -151,7 +151,7 @@ const Info = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="w-1/2 bg-[#151515] p-6 rounded-3xl">
+                    <div className="w-full md:w-full lg:w-1/2 xl:w-1/2 bg-[#151515] p-6 rounded-3xl">
 
                         <h3 class="text-white text-lg font-semibold mb-2 text-left">Who am I?</h3>
                         <p class="text-[#B8B8B8] mb-4 text-left">

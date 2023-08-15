@@ -164,11 +164,9 @@ const Projects = () => {
                         </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                        <Row>
-                            <div className="wistia-video">
-                                <WistiaVideo />
-                            </div>
-                        </Row>
+                        <div className="wistia-video">
+                            <WistiaVideo />
+                        </div>
                         <Row>
                         <div className="card-container">
                             {
