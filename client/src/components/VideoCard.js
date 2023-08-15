@@ -24,27 +24,24 @@ const VideoCard = ({ id, title, description, imgUrl, url }) => {
     };
 
     return (
-        <Col size={12} sm={6} md={4}>
-            <div className="card" 
-                style={{ 
-                    cursor: "pointer", 
-                    height: id < 4 ? "330px" : "295px" 
-                }}
-                onClick={handleGoToVideo}
-            >
-                <div className="proj-container">
-                    <img src={imgUrl} alt="Project-Card" />
-                    <div className="proj-details-container">
-                        <div className="proj-text">
-                            <h4>{title}</h4>
-                            <span>{description}</span>
-                        </div>
+        <div className="card" 
+            style={{ 
+                cursor: "pointer",
+            }}
+            onClick={handleGoToVideo}
+        >
+            <div className="proj-container">
+                <img src={imgUrl} alt="Project-Card" />
+                <div className="proj-details-container">
+                    <div className="proj-text">
+                        <h4>{title}</h4>
+                        <span>{description}</span>
                     </div>
                 </div>
-                <div className="blob"></div>
-                <div className="fakeblob"></div>
             </div>
-        </Col>
+            <div className="blob"></div>
+            <div className="fakeblob"></div>
+        </div>
     );
 };
 

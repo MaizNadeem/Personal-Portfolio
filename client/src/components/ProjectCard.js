@@ -26,6 +26,7 @@ export const ProjectCard = ({ id, title, description, imgUrl, url, banUrl }) => 
                 }
             });
         });
+
     }, []);
 
     const handleGoToSource = () => {
@@ -33,8 +34,7 @@ export const ProjectCard = ({ id, title, description, imgUrl, url, banUrl }) => 
     };
 
     return (
-        <Col size={12} sm={6} md={4}>
-            <div className="card">
+        <div className="card">
             <div className="proj-container">
                 <img src={imgUrl} alt="Project-Card" />
                 <div className="proj-details-container">
@@ -56,7 +56,7 @@ export const ProjectCard = ({ id, title, description, imgUrl, url, banUrl }) => 
             </div>
             <div className="blob"></div>
             <div className="fakeblob"></div>
-            </div>
+            
             {showModal &&   <CustomModal 
                                 id={id}
                                 title={title}
@@ -67,6 +67,6 @@ export const ProjectCard = ({ id, title, description, imgUrl, url, banUrl }) => 
                                 showModal={showModal} 
                                 toggleModal={toggleModal}
                             />}
-        </Col>
+        </div>
     );
 };

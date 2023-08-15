@@ -365,11 +365,17 @@ body.navbar-collapse.show {
         font-size: 14px !important;
         margin: 0 !important;
     }
-    .proj-details-container {
-        height: max-content !important;
+    .card {
+        flex: 100% !important;
     }
-    .proj-text {
-        margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .innovation-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -634,6 +640,14 @@ body.navbar-collapse.show {
     border-radius: 20px;
     overflow: hidden;
     transition: background 300ms ease-in-out;
+    align-self: stretch;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 .card {
     display: flex;
@@ -643,7 +657,9 @@ body.navbar-collapse.show {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin: 5px;
+    align-self: stretch;
+    flex: 32%;
 }
 .card:hover > .proj-container {
     background: rgb(26, 26, 26, 0.6);
@@ -655,6 +671,7 @@ body.navbar-collapse.show {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    flex: 1;
 }
 .button-container {
     display: flex;
@@ -664,7 +681,6 @@ body.navbar-collapse.show {
 .proj-text {
     line-height: 1;
     margin-bottom: 10px;
-    flex: 1;
 }
 .proj-text h4 {
     color: white;
@@ -934,7 +950,7 @@ body.navbar-collapse.show {
 
 
 .wistia-video {
-    margin-bottom: 20px;
+    margin: 0 0 0 0;
 }
 
 .innovation-container {

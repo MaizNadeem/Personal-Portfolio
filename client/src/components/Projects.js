@@ -170,6 +170,7 @@ const Projects = () => {
                             </div>
                         </Row>
                         <Row>
+                        <div className="card-container">
                             {
                                 videos.map((video) => {
                                     return (
@@ -180,6 +181,7 @@ const Projects = () => {
                                     )
                                 })
                             }
+                        </div>
                         </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
