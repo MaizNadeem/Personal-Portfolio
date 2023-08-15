@@ -122,8 +122,8 @@ const Info = () => {
             ref={ref}
         >
             <Container>
-            <div className='flex flex-col py-24'>
-                <h2 className="mb-12" style={{ fontWeight: 700, fontSize: "45px" }}>
+            <div className='flex flex-col py-12 md:py-24 lg:py-24 xl:py-24'>
+                <h2 className="mb-8 md:mb-12 lg:mb-12 xl:mb-12 text-3xl md:text-4xl lg:text-4xl xl:text-4xl" style={{ fontWeight: 700 }}>
                     About Me
                 </h2>
                 <div className='flex flex-col md:flex-col lg:flex-row xl:flex-row gap-10 items-center justify-center'>
