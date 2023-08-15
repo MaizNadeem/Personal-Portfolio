@@ -50,19 +50,32 @@ const NavigationBar = () => {
     const handleExpanded = () => {
         setMenuExpanded(prevMenuExpanded => !prevMenuExpanded);
     };
+
+    const handleLogoClick = () => {
+        const links = document.querySelectorAll('.navbar-link');
+        links.forEach(link => link.classList.remove('active'));
+    }
+
+    useEffect(() => {
+        const logo = document.querySelector('.logo');
+        logo.addEventListener('click', handleLogoClick);
+        return () => {
+            logo.removeEventListener('click', handleLogoClick);
+        };
+    }, []);
     
 
     return (
         <Router>
-            <header>
-                <Navbar
-                    expand="lg"
-                    className={` ${scrolled ? "scrolled" : ""}${menuExpanded ? " expanded" : ""}`}
-                    expanded={menuExpanded}
-                    onClick={isHamburgerMenuVisible ? handleExpanded : null}
-                >
+        <header>
+        <Navbar
+            expand="lg"
+            className={` ${scrolled ? "scrolled" : ""}${menuExpanded ? " expanded" : ""}`}
+            expanded={menuExpanded}
+            onClick={isHamburgerMenuVisible ? handleExpanded : null}
+        >
         <Container>
-            <Navbar.Brand href="#home" className='logo' onClick={() => handleLinkClick('home')}>
+            <Navbar.Brand href="#home" className='logo'>
                 <img src={logo} alt='Logo' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
