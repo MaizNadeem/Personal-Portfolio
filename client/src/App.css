@@ -391,6 +391,9 @@ body.navbar-collapse.show {
         font-size: 20px !important;
         margin-bottom: 20px;
     }
+    .textalignmentbanner {
+        min-height: 400px;
+    }
 }
 
 @media (max-width: 575px) {
