@@ -14,73 +14,97 @@ import navIcon4 from '../assets/img/nav-icon4.svg';
 
 const NavigationBar = () => {
 
-    const [activeLink, setActiveLink] = useState("home")
-    const [scrolled, setScrolled] = useState(false)
-
-    useEffect (() => {
+    const [activeLink, setActiveLink] = useState("home");
+    const [scrolled, setScrolled] = useState(false);
+    const [menuExpanded, setMenuExpanded] = useState(false);
+    const [isHamburgerMenuVisible, setIsHamburgerMenuVisible] = useState(false);
+  
+    const handleResize = () => {
+        const breakpoint = 991.98;
+        const isSmallScreen = window.innerWidth < breakpoint;
+        setIsHamburgerMenuVisible(isSmallScreen);
+    };
+  
+    useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50)
-                setScrolled(true)
+                setScrolled(true);
             else
-                setScrolled(false)
+                setScrolled(false);
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        window.addEventListener("scroll", onScroll);
+
+        return () => {
+            window.removeEventListener("scroll", onScroll);
+            window.removeEventListener('resize', handleResize);
         }
-        window.addEventListener("scroll", onScroll)
 
-        return () => window.removeEventListener("scroll", onScroll)
+    }, []);
 
-    }, [])
-
-    const onUpdateActiveLink = value => {
-        setActiveLink(value)
-    }
+    const handleLinkClick = (link) => {
+        setActiveLink(link);
+    };
+    
+    const handleExpanded = () => {
+        setMenuExpanded(prevMenuExpanded => !prevMenuExpanded);
+    };
+    
 
     return (
         <Router>
-        <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+            <header>
+                <Navbar
+                    expand="lg"
+                    className={` ${scrolled ? "scrolled" : ""}${menuExpanded ? " expanded" : ""}`}
+                    expanded={menuExpanded}
+                    onClick={isHamburgerMenuVisible ? handleExpanded : null}
+                >
         <Container>
-            <Navbar.Brand href="#home" className='logo'>
+            <Navbar.Brand href="#home" className='logo' onClick={() => handleLinkClick('home')}>
                 <img src={logo} alt='Logo' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className='navbar-toggler-icon' ></span>
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link 
-                    href="#home"
-                    className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => onUpdateActiveLink('home')}
-                >Home</Nav.Link>
-                <Nav.Link
-                    href="#skills"
-                    className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => onUpdateActiveLink('skills')}
-                >Skills</Nav.Link>
-                <Nav.Link 
-                    href="#projects"
-                    className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => onUpdateActiveLink('projects')}
-                >Projects</Nav.Link>
-                <Nav.Link
-                    href="#aboutme"
-                    className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => onUpdateActiveLink('aboutme')}
-                >About Me</Nav.Link>
-                <Nav.Link
-                    href="#footer"
-                    className={activeLink === 'footer' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => onUpdateActiveLink('footer')}
-                >My Resume</Nav.Link>
+                <Nav className="me-auto">
+                    <Nav.Link 
+                        href="#home"
+                        className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
+                        onClick={() => handleLinkClick('home')}
+                    >Home</Nav.Link>
+                    <Nav.Link
+                        href="#skills"
+                        className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
+                        onClick={() => handleLinkClick('skills')}
+                    >Skills</Nav.Link>
+                    <Nav.Link 
+                        href="#projects"
+                        className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
+                        onClick={() => handleLinkClick('projects')}
+                    >Projects</Nav.Link>
+                    <Nav.Link
+                        href="#aboutme"
+                        className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'}
+                        onClick={() => handleLinkClick('aboutme')}
+                    >About Me</Nav.Link>
+                    <Nav.Link
+                        href="#footer"
+                        className={activeLink === 'footer' ? 'active navbar-link' : 'navbar-link'}
+                        onClick={() => handleLinkClick('footer')}
+                    >My Resume</Nav.Link>
             </Nav>
-            <span className='navbar-text'>
+            <span className={`navbar-text ${menuExpanded ? "expanded" : ""}`}>
                 <div className='social-icon'>
-                    <a href='https://www.linkedin.com/in/m-maiz-nadeem-020949176' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.linkedin.com/in/m-maiz-nadeem-020949176' target="_blank" rel="noopener noreferrer" className='mr-2'>
                         <img src={navIcon1} alt='Social' />
                     </a>
-                    <a href='https://twitter.com/MaizNadeem' target="_blank" rel="noopener noreferrer">
+                    <a href='https://twitter.com/MaizNadeem' target="_blank" rel="noopener noreferrer" className='mr-2'>
                         <img src={navIcon2} alt='Social' />
                     </a>
-                    <a href='https://www.instagram.com/m.maiznadeem' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.instagram.com/m.maiznadeem' target="_blank" rel="noopener noreferrer" className='mr-2'>
                         <img src={navIcon3} alt='Social' />
                     </a>
                     <a href='https://github.com/MaizNadeem' target="_blank" rel="noopener noreferrer">
@@ -94,6 +118,7 @@ const NavigationBar = () => {
             </Navbar.Collapse>
         </Container>
         </Navbar>
+        </header>
         </Router>
     )
 

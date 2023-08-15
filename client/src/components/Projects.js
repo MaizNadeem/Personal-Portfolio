@@ -135,9 +135,9 @@ const Projects = () => {
                     <h2>Projects</h2>
                     <p>I've designed and developed this personal portfolio website to showcase my skills and projects. Implemented responsive design, integrated interactive elements, and optimized site performance to create an engaging user experience.</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                    <Nav variant="pills" className="nav-pills mb-5" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Software Dev Projects</Nav.Link>
+                            <Nav.Link eventKey="first">Dev Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">Video Editing</Nav.Link>
@@ -149,6 +149,7 @@ const Projects = () => {
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Tab.Pane eventKey="first">
                         <Row>
+                        <div className="card-container">
                             {
                                 projects.map((project) => {
                                     return (
@@ -157,8 +158,9 @@ const Projects = () => {
                                             {...project}
                                         />
                                     )
-                                })
+                                })   
                             }
+                        </div>
                         </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">

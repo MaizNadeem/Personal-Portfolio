@@ -66,7 +66,7 @@ const Skills = () => {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>I have learnt many aspects of Development including Routing, APIs and caching.<br></br> My video editing skills help me to create stunning designs as I like making better designs.</p>
+                            <p>I have learnt many aspects of Development including Routing, APIs and caching. My video editing skills help me to create stunning designs as I like making better designs.</p>
                             <div className="gd-carousel-wrapper">
                             <Carousel 
                                 swipeable={true}
