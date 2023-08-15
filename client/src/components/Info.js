@@ -153,24 +153,24 @@ const Info = () => {
                     </div>
                     <div className="w-full md:w-full lg:w-1/2 xl:w-1/2 bg-[#151515] p-6 rounded-3xl">
 
-                        <h3 class="text-white text-lg font-semibold mb-2 text-left">Who am I?</h3>
-                        <p class="text-[#B8B8B8] mb-4 text-left">
+                        <h3 className="text-white text-lg font-semibold mb-2 text-left">Who am I?</h3>
+                        <p className="text-[#B8B8B8] mb-4 text-left">
                             I am a passionate and dedicated student from Lahore, Pakistan with a strong background in Computer Science.
                             I have made Web, Mobile and Desktop Applications with different tech stacks. I've also worked professionally as a Video Editor. I'm more of a frontend guy trying to become a Full-Stack Developer.
                         </p>
                         
-                        <h3 class="text-white text-lg font-semibold mb-2 text-left">Interests & Hobbies</h3>
-                        <p class="text-[#B8B8B8] mb-4 text-left">
+                        <h3 className="text-white text-lg font-semibold mb-2 text-left">Interests & Hobbies</h3>
+                        <p className="text-[#B8B8B8] mb-4 text-left">
                             In my free time, I enjoy many video games.
                             Favourite Sport is Football.
                         </p>
                         
-                        <h3 class="text-white text-lg font-semibold mb-2 text-left">Languages</h3>
-                        <p class="text-[#B8B8B8] mb-4 text-left">
+                        <h3 className="text-white text-lg font-semibold mb-2 text-left">Languages</h3>
+                        <p className="text-[#B8B8B8] mb-4 text-left">
                             I am fluent in English and Urdu, allowing me to communicate with no language barrier internationally as well as in my local country.
                         </p>
                         <hr></hr>
-                        <p class="text-[#B8B8B8] text-left">
+                        <p className="text-[#B8B8B8] text-left">
                         I like collaborative environments, valuing teamwork and understanding the dynamics of group synergy. My dedication to meeting deadlines and adhering to schedules ensures efficient project execution. I've successfully completed projects that required intricate problem-solving and critical thinking, demonstrating my ability to navigate complex challenges with innovative solutions.
                         </p>
 

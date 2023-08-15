@@ -57,15 +57,6 @@ const NavigationBar = () => {
         handleExpanded()
     }
 
-    useEffect(() => {
-        const logo = document.querySelector('.logo');
-        logo.addEventListener('click', handleLogoClick);
-        return () => {
-            logo.removeEventListener('click', handleLogoClick);
-        };
-    }, []);
-    
-
     return (
         <Router>
         <header>
@@ -77,7 +68,7 @@ const NavigationBar = () => {
         >
         <Container>
             <Navbar.Brand href="#home" className='logo'>
-                <img src={logo} alt='Logo' />
+                <img src={logo} alt='Logo' onClick={handleLogoClick}/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className='navbar-toggler-icon' ></span>

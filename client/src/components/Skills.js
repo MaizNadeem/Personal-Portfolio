@@ -102,15 +102,15 @@ const Skills = () => {
  
                         </div>
                         <div className="skills-icon-wrap">
-                                <h5>Versatile Toolkit: Technologies, and Languages I've Engaged With</h5>
-                                <div className="image-gallery">
+                            <h5>Versatile Toolkit: Technologies, and Languages I've Engaged With</h5>
+                            <div className="image-gallery">
                                 {imagesArray.map((image, index) => (
-                                    <div className="image-item">
+                                    <div className="image-item" key={index}>
                                         <img src={image} alt={`Icon ${index}`} />
                                     </div>
                                 ))}
-                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
