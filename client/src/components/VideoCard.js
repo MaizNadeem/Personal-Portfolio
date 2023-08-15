@@ -1,7 +1,6 @@
 import { useEffect } from "react";
-import { Col } from "react-bootstrap";
 
-const VideoCard = ({ id, title, description, imgUrl, url }) => {
+const VideoCard = ({ title, description, imgUrl, url }) => {
 
     useEffect(() => {
         const allCards = document.querySelectorAll(".card");

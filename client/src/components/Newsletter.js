@@ -9,7 +9,7 @@ export const Newsletter = () => {
 
     const sendResumeRequest = async (email) => {
         try {
-        const response = await fetch("http://localhost:5000/send-resume", {
+        const response = await fetch("https://personal-portfolio-csklx8vjz-maiznadeem.vercel.app/send-resume", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
@@ -41,7 +41,7 @@ export const Newsletter = () => {
     };
 
     const handleDownloadResume = () => {
-        window.location.href = "http://localhost:5000/download-resume";
+        window.location.href = "https://personal-portfolio-csklx8vjz-maiznadeem.vercel.app/download-resume";
     };
 
     return (

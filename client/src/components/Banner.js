@@ -53,7 +53,7 @@ const Banner = () => {
     }, [text])
 
     const handleDownloadResume = () => {
-        window.location.href = "http://localhost:5000/download-resume";
+        window.location.href = "https://personal-portfolio-csklx8vjz-maiznadeem.vercel.app/download-resume";
     };
 
     return (
