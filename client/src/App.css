@@ -296,6 +296,21 @@ body.navbar-collapse.show {
         position: relative;
         border: 1px solid white;
     }
+    .innovation-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter-bx {
+        padding: 40px 60px !important;
+    }
+    .newsletter-bx h3 {
+        font-size: 20px !important;
+    }
+    .footer img {
+        width: 35% !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -362,14 +377,26 @@ body.navbar-collapse.show {
     .card {
         flex: 100% !important;
     }
+    .contact h2 {
+        font-size: 30px !important;
+        margin: 20px 0 !important;
+    }
+    .contact form {
+        margin: 10px 10px 13px 10px !important;
+    }
+    .newsletter-bx {
+        padding: 40px 40px !important;
+    }
+    .newsletter-bx h3 {
+        font-size: 20px !important;
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width: 1000px) {
-    .innovation-container {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 575px) {
+    .footer-logo {
         justify-content: center;
-        align-items: center;
+        margin-bottom: 10px;
     }
 }
 

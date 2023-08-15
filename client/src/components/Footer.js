@@ -13,7 +13,7 @@ const Footer = () => {
                 <Row className="align-items-center">
                     <Newsletter />
                     <Col size={12} sm={6}>
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex align-items-center footer-logo">
                             <img src={logo} alt="Logo" />
                         </div>
                     </Col>
