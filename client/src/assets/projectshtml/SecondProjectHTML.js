@@ -47,11 +47,11 @@ const SecondProjectHTML = () => {
             </ul>
 
             <h2>Screenshots</h2>
-            <div style={{display: "flex", alignItems:"center" }}>
-                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/4.jpg" alt="Deliveroo Screenshot" style={{ margin: "10px", borderRadius:"10px" }} />
-                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/5.jpg" alt="Deliveroo Screenshot" style={{ marginRight: "10px", borderRadius:"10px" }} />
-                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/6.jpg" alt="Deliveroo Screenshot" style={{ borderRadius:"10px" }} />
-                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/7.jpg" alt="Deliveroo Screenshot" style={{ margin: "10px", borderRadius:"10px" }} />
+            <div className='deliveroo-images'>
+                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/4.jpg" alt="Deliveroo Screenshot" />
+                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/5.jpg" alt="Deliveroo Screenshot" />
+                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/6.jpg" alt="Deliveroo Screenshot" />
+                <img src="https://raw.githubusercontent.com/MaizNadeem/Deliveroo-2.0/main/Screenshots/7.jpg" alt="Deliveroo Screenshot" />
             </div>
 
             <h2>Technologies</h2>

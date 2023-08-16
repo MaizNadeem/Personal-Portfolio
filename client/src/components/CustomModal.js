@@ -24,6 +24,7 @@ const CustomModal = ({ id, title, description, imgUrl, url, banUrl, showModal, t
                 onHide={handleClose}
                 dialogClassName="custom-modal"
                 aria-labelledby="example-custom-modal-styling-title"
+                centered  // This centers the modal both vertically and horizontally
                 style={{
                     zIndex: 9999,
                 }}

@@ -28,8 +28,8 @@ const FourthProjectHTML = () => {
 
             <h2>Screenshots</h2>
 
-            <div style={{textAlign: "center"}} className='nft-screenshots'>
-                <img src="https://raw.githubusercontent.com/MaizNadeem/NFT-Marketplace/main/images/Image%201.jpg" alt="Home Page" style={{marginRight: "20px"}} />
+            <div className='nft-screenshots'>
+                <img src="https://raw.githubusercontent.com/MaizNadeem/NFT-Marketplace/main/images/Image%201.jpg" alt="Home Page" />
                 <img src="https://raw.githubusercontent.com/MaizNadeem/NFT-Marketplace/main/images/Image%202.jpg" alt="Details Page" />
             </div>
 
