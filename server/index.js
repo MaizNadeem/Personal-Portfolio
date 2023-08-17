@@ -57,7 +57,7 @@ router.post("/send-resume", (req, res) => {
     
     const resumePath = path.join(__dirname, "resume.pdf"); // Update to the correct filename
     const resumeAttachment = {
-        filename: "resume.pdf",
+        filename: "Muhammad Maiz - Resume.pdf",
         path: resumePath,
     };
 
@@ -81,7 +81,7 @@ router.post("/send-resume", (req, res) => {
 
 app.get("/download-resume", (req, res) => {
     const resumePath = path.join(__dirname, "resume.pdf");
-    res.download(resumePath, "Maiz-Resume.pdf");
+    res.download(resumePath, "Muhammad Maiz - Resume.pdf");
 });
 
 const PORT = process.env.PORT;

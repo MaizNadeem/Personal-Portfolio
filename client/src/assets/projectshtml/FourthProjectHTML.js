@@ -10,7 +10,7 @@ const FourthProjectHTML = () => {
 
             <div className="button-container-modal">
                 <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/NFT-Marketplace.git", "_blank")}>
-                    <AiOutlineLink size={20} style={{ marginRight: "10px" }} />
+                    <AiOutlineLink />
                     <>Go to Source</>
                 </Button>
             </div>
@@ -37,16 +37,6 @@ const FourthProjectHTML = () => {
 
             <p>You can download the Android build of the app from here: <a href="https://github.com/MaizNadeem/NFT-Marketplace.git">NFT Marketplace App (apk)</a></p>
 
-            <h2>Deployment</h2>
-
-            <p>Follow the steps below to run the app locally on your own device:</p>
-
-            <ol>
-                <li>Clone this repository.</li>
-                <li>Install the required dependencies using <code>npm install</code> or <code>yarn install</code>.</li>
-                <li>Run the app on an emulator or physical device using <code>npm start</code> or <code>yarn start</code>.</li>
-            </ol>
-
             <h2>Technologies Used</h2>
 
             <ul>
@@ -54,11 +44,7 @@ const FourthProjectHTML = () => {
                 <li>Firebase Realtime Database</li>
                 <li>React Navigation</li>
             </ul>
-
-            <h2>Contributing</h2>
-
-            <p>Contributions are welcomed! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.</p>
-
+            
             <hr />
 
             <h4 align="center">© M. Maiz Nadeem</h4>

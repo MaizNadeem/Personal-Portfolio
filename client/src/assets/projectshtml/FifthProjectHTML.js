@@ -13,7 +13,7 @@ const FifthProjectHTML = () => {
                     <span>View Live Demo</span>
                 </Button>
                 <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/Pig-Game.git", "_blank")}>
-                    <AiOutlineLink size={20} style={{ marginRight: "10px" }} />
+                    <AiOutlineLink />
                     <>Go to Source</>
                 </Button>
             </div>

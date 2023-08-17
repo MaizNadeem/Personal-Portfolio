@@ -59,7 +59,11 @@
     background-color: black !important;
 }
 
-
+.technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .technologies > img {
     height: 30px;
     width: auto;
@@ -136,6 +140,11 @@
     border-radius: 5px;
 }
 
+.icon-and-text-modal > svg {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
 
 @media (max-width: 768px) {
     .html-container h1 {
@@ -146,6 +155,15 @@
     .html-container ul,
     .html-container ol {
         margin: 10px 0 !important;
+    }
+    .html-container h2 {
+        font-size: 18px;
+    }
+    li {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
     }
     .other-views {
         flex-direction: column;
@@ -170,5 +188,21 @@
     }
     .deliveroo-images > img {
         width: 60%;
+    }
+    .technologies > img {
+        height: 20px;
+    }
+    .text-only-modal {
+        font-size: 12px !important;
+    }
+    .icon-and-text-modal {
+        font-size: 12px !important;
+    }
+    .icon-and-text-modal > svg {
+        font-size: 12px !important;
+        margin-right: 2px !important;
+    }
+    .html-container h4 {
+        font-size: 14px;
     }
 }

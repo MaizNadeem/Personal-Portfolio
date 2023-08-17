@@ -12,7 +12,7 @@ const FirstProjectHTML = () => {
                     <span>View Live Demo</span>
                 </Button>
                 <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/Real-Estate-Web", "_blank")}>
-                    <AiOutlineLink size={20} style={{ marginRight: "10px" }} />
+                    <AiOutlineLink />
                     <>Go to Source</>
                 </Button>
             </div>
@@ -48,57 +48,6 @@ const FirstProjectHTML = () => {
                 <li><strong>Auth0</strong>: Fortified Authentication. A top-tier third-party service providing robust user authentication for enhanced security.</li>
                 <li><strong>Mantine</strong>: Beauty in UI Components. A treasure trove of React components for crafting polished and stunning user interfaces.</li>
             </ul>
-            <h2>Run on Local Machine</h2>
-            <ol>
-                <li>Clone this repository to your local machine:
-                    <pre><code>git clone https://github.com/MaizNadeem/Real-Estate-Web.git</code></pre>
-                </li>
-                <li>Navigate to the project directory:
-                    <pre><code>cd Real-Estate-Web</code></pre>
-                </li>
-                <li>Install the required dependencies for both the client and server sides:
-                    <pre><code>cd client
-                    npm install
-                    cd ../server
-                    npm install</code></pre>
-                </li>
-                <li>Auth0 Configuration Changes:
-                    <ul>
-                        <li>In the server directory, go to <code>./config/auth0Config.js</code> and update the <code>issuerBaseURL</code> with the correct Auth0 issuer URL from your own App.</li>
-                    </ul>
-                </li>
-                <li>MongoDB Configuration Changes:
-                    <ul>
-                        <li>In the server directory, create a <code>.env</code> file and set the following variables with your own MongoDB and Auth0 credentials:
-                            <pre><code>PORT=8000
-                            DATABASE_URL=your_mongodb_url_here
-                            ISSUER_BASE_URL=your_auth0_issuer_url_here</code></pre>
-                        </li>
-                    </ul>
-                </li>
-                <li>Auth0 Configuration Changes on the client side:
-                    <ul>
-                        <li>In the client directory, go to <code>./config.js</code> and replace the <code>domain</code>, <code>clientID</code> with your own Auth0 app configuration.</li>
-                    </ul>
-                </li>
-                <li>Update API URL:
-                    <ul>
-                        <li>In the client directory, go to <code>./src/utils/api.js</code> and update the <code>baseURL</code> to your own server URL or <code>http://localhost:8000/api</code>.</li>
-                    </ul>
-                </li>
-                <li>Start the development servers for both the client and server sides:
-                    <pre><code>cd client
-                    npm run dev
-                    cd ../server
-                    npm start</code></pre>
-                </li>
-                <li>Open your web browser and visit <a href="http://localhost:3000">http://localhost:3000</a> to access the Homyz website. Additionally, you can access the server at <a href="http://localhost:8000">http://localhost:8000</a>.</li>
-            </ol>
-            <p>Now you can explore the Homyz Real Estate website locally and make any necessary changes to suit your requirements. If you have any questions or face any issues during the setup process, don't hesitate to seek assistance. Happy coding!</p>
-            <h3>Contributing</h3>
-            <p>Contributions to this project are welcomed. If you wish to contribute, please follow the standard GitHub workflow by creating pull requests and discussing any proposed changes via issues.</p>
-            <h3>Reporting Issues</h3>
-            <p>If you encounter any issues while using the Homyz website or have any suggestions for improvement, please open an issue on the GitHub repository. Your feedback is valuable to us, and we will address any reported issues promptly.</p>
             <h2>Contact</h2>
             <p>Maiz - <a href="mailto:contact.maiznadeem@gmail.com">contact.maiznadeem@gmail.com</a></p>
             <p>Project Link: <a href="https://github.com/MaizNadeem/Real-Estate-Web">View Github</a></p>

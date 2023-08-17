@@ -13,7 +13,7 @@ const SecondProjectHTML = () => {
                     <span>Downlaod for Android</span>
                 </Button>
                 <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/Deliveroo-2.0.git", "_blank")}>
-                    <AiOutlineLink size={20} style={{ marginRight: "10px" }} />
+                    <AiOutlineLink />
                     <>Go to Source</>
                 </Button>
             </div>
@@ -93,30 +93,6 @@ const SecondProjectHTML = () => {
                 <li><strong>GraphQL:</strong> A query language and runtime that enables efficient communication between the client and server, reducing unnecessary data transfers and improving performance.</li>
                 <li><strong>Node JS:</strong> A server-side JavaScript runtime that powers the backend server of the app, handling authentication, data retrieval, and server-side operations.</li>
             </ul>
-
-            <h2>Getting Started</h2>
-            <h3>Run Locally</h3>
-            <p>Install this project with expo using git-cli.</p>
-            <ol>
-                <li>Clone the project:</li>
-                <pre><code>git clone https://github.com/MaizNadeem/Deliveroo-2.0.git</code></pre>
-                <li>Change directory:</li>
-                <pre><code>cd Deliveroo-2.0</code></pre>
-                <li>Install dependencies:</li>
-                <pre><code>npm install</code></pre>
-                <li>Update the `DeliveryScreen.js` file with your own Google Maps API key:</li>
-                <ol>
-                    <li>Open the file located at `Deliveroo-2.0/screens/DeliveryScreen.js`.</li>
-                    <li>Look for the line `const apiKey = process.env.GOOGLE_MAPS_API_KEY;`.</li>
-                    <li>Replace `process.env.GOOGLE_MAPS_API_KEY` with your API key:</li>
-                    <pre><code>const apiKey = "YOUR_API_KEY";</code></pre>
-                    <li>Replace `"YOUR_API_KEY"` with your actual Google Maps API key obtained from Google Cloud Platform (cloud.google.com).</li>
-                    <li>Save the file after making the changes.</li>
-                </ol>
-                <li>Remember to handle sensitive information securely and avoid sharing API keys publicly.</li>
-                <li>It's all! You can start the expo server now for development:</li>
-                <pre><code>npx expo start</code></pre>
-            </ol>
 
             <h2>Contact</h2>
             <p>Maiz - <a href="mailto:contact.maiznadeem@gmail.com">contact.maiznadeem@gmail.com</a></p>

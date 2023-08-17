@@ -13,7 +13,7 @@ const ThirdProjectHTML = () => {
                     <span>Downlaod for Windows</span>
                 </Button>
                 <Button className="custom-button icon-and-text-modal" onClick={() => window.open("https://github.com/MaizNadeem/Lifestream-WPF.git", "_blank")}>
-                    <AiOutlineLink size={20} style={{ marginRight: "10px" }} />
+                    <AiOutlineLink />
                     <>Go to Source</>
                 </Button>
             </div>
@@ -91,48 +91,6 @@ const ThirdProjectHTML = () => {
                         <li><strong>FontAwesome.Sharp:</strong> Used to incorporate a wide range of icons and fonts into the application for enhanced visual elements.</li>
                     </ul>
                 </li>
-            </ul>
-
-            <h2>Deployment Instructions</h2>
-            <p>
-                To deploy the Lifestream - Blood Bank System on your own Windows machine, follow these steps:
-            </p>
-            <ol>
-                <li>Download the source code from the <a href="https://github.com/MaizNadeem/Lifestream-WPF">GitHub repository</a>.</li>
-                <li>Ensure that you have the following dependencies installed:
-                    <ul>
-                        <li>Visual Studio (2019 or later) with .NET Framework 4.8 development tools.</li>
-                        <li>.NET Framework 4.8 runtime.</li>
-                        <li>Azure Cloud account with Azure Data Studio (or SQL Server Management Studio - SSMS) installed.</li>
-                    </ul>
-                </li>
-                <li>Open the project in Visual Studio.</li>
-                <li>Update the connection string in the <code>RepositoryBase.cs</code> file located at <code>Lifestream-WPF/Repositories/RepositoryBase.cs</code>. Replace <code>"AZURE_CONNECTION_STRING"</code> with your own connection string.</li>
-                <li>Build the solution to restore NuGet packages and compile the project.</li>
-                <li>Publish the project using Visual Studio to create the executable files.</li>
-                <li>Copy the published files to the target machine.</li>
-                <li>Install .NET Framework 4.8 runtime on the target machine if it's not already installed.</li>
-                <li>Run the executable file to start the Lifestream - Blood Bank System.</li>
-            </ol>
-
-            <h2>Database Setup</h2>
-            <p>
-                To set up the database for the Lifestream - Blood Bank System, follow these steps:
-            </p>
-            <ol>
-                <li>Download the <a href="https://github.com/MaizNadeem/Lifestream-WPF/blob/master/BloodBank.bacpac">BloodBank.bacpac</a> file from the GitHub repository.</li>
-                <li>Open Azure Data Studio or SQL Server Management Studio (SSMS).</li>
-                <li>Connect to your Azure Database or local MSSQL Server.</li>
-                <li>Right-click on the Databases folder and choose "Import Data-tier Application."</li>
-                <li>Select the downloaded BloodBank.bacpac file and follow the import wizard to restore the database.</li>
-                <li>Once the database is restored, update the connection string in the <code>RepositoryBase.cs</code> file of the application to point to the newly restored database.</li>
-            </ol>
-
-            <h2>Additional Notes</h2>
-            <ul>
-                <li>Make sure to have Visual Studio (2019 or later) and .NET Framework 4.8 installed on your machine before proceeding with the deployment.</li>
-                <li>The <code>BloodBank.bacpac</code> file contains the pre-configured database schema for the Lifestream - Blood Bank System. You can use it to quickly set up the database.</li>
-                <li>For any issues or questions, please refer to the project's <a href="https://github.com/MaizNadeem/Lifestream-WPF">GitHub repository</a> or contact the project owner.</li>
             </ul>
 
             <hr />
