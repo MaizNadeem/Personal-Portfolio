@@ -53,7 +53,7 @@ const Banner = () => {
     }, [text])
 
     const handleDownloadResume = () => {
-        window.location.href = "https://personal-portfolio-csklx8vjz-maiznadeem.vercel.app/download-resume";
+        window.location.href = "https://personal-portfolio-server-maiznadeem.vercel.app/download-resume";
     };
 
     return (
