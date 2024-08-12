@@ -66,6 +66,7 @@ const Banner = () => {
                     <h1>{`Hi! I'm Maiz,`} <span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
                     <p>Dedicated to creating captivating digital experiences. With a blend of technical expertise and creative flair, I bring ideas to life through code and visual storytelling. As a lifelong learner, I'm always seeking new ways to push the boundaries of what's possible in the digital realm.</p>
                     <button onClick={handleDownloadResume}>Download Resume <ArrowRightCircle size={25} /></button>
+                    <p className="text-white mt-2 text-sm">Or, Email: <span className="text-[#aaa6a6]">contact.maiz@proton.me</span></p>
                 </div>
             </Col>
             <Col xs={12} md={6} xl={5}>

@@ -8,6 +8,6 @@ This is my portfolio website.
 
 ## Contact
 
-Maiz - contact.maiznadeem@gmail.com
+Maiz - contact.maiz@proton.me
 
 Project Link: [View Github](https://github.com/MaizNadeem/Personal-Portfolio)

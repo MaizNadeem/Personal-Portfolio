@@ -611,7 +611,7 @@ body.navbar-collapse.show {
     width: 100%;
 }
 .custom-button {
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
     font-weight: 700;
     border: none;
@@ -621,6 +621,7 @@ body.navbar-collapse.show {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0px;
 }
 .custom-button.text-only {
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);

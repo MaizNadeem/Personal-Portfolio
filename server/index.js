@@ -64,8 +64,8 @@ router.post("/send-resume", (req, res) => {
     const mail = {
         from: process.env.EMAIL_USER,
         to: email,
-        subject: "Your Resume from Maiz",
-        text: `Hello,\n\nThank you for your interest in my profile. I am pleased to share my resume with you as requested. Please find the attached resume for your consideration.\n\nIf you have any further inquiries or would like to discuss my qualifications in more detail, feel free to contact me at your convenience.\n\nThank you for your time and consideration.\n\nBest regards,\nMuhammad Maiz`,
+        subject: "Developer Application - Resume from Maiz",
+        text: `Hello,\n\nThank you for your interest in my profile. Please find the attached resume for your consideration.\n\nIf you have any further questions or would like to discuss my qualifications in more detail, feel free to contact me at your convenience.\n\nThank you.\n\nBest regards,\nMuhammad Maiz`,
         attachments: [resumeAttachment],
     };
       
@@ -84,5 +84,5 @@ app.get("/download-resume", (req, res) => {
     res.download(resumePath, "Muhammad Maiz - Resume.pdf");
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server Running on Port ${PORT}`));
